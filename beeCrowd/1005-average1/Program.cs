@@ -15,8 +15,8 @@ class gradeAverage
 
     static void Main(string[] args)
     {
-        double A = Math.Round(Convert.ToDouble(Console.ReadLine()), 1);
-        double B = Math.Round(Convert.ToDouble(Console.ReadLine()), 1);
+        double A = Convert.ToDouble(Console.ReadLine());
+        double B = Convert.ToDouble(Console.ReadLine());
         //Given, A has weight 3.5 and B has weight 7.5
 
         A = Math.Max(0, Math.Min(10, A));

@@ -26,3 +26,5 @@ else
 {
     Console.WriteLine("Valores nao aceitos");
 }
+
+//RunTime error

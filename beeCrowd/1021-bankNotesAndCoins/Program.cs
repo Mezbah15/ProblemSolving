@@ -8,42 +8,54 @@ The input file contains a value of floating point N (0 ≤ N ≤ 1000000.00).
 Output
 Print the minimum quantity of banknotes and coins necessary to change the initial value, as the given example. */
 
-var amount = Convert.ToDouble(Console.ReadLine());
 
-var hundredNotes = amount / 100.00;
-var hundredNotesRest = amount % 100.00;
+var amount = Console.ReadLine();
+var indexPart = amount.IndexOf(".");
+
+var integerPart = amount.Substring(0, indexPart);
+var integerV = int.Parse(integerPart);
+Console.WriteLine("Integer : " + integerV);
+
+var decimalPart = amount.Substring(indexPart);
+var decimalV = int.Parse(decimalPart);
+int doublePortion = (int)decimalV;
+Console.WriteLine("Decimal : " + decimalV);
+
+
+var hundredNotes = integerV / 100;
+var hundredNotesRest = integerV % 100;
 
 var fiftyNotes = hundredNotesRest / 50;
 var fiftyNotesRest = hundredNotesRest % 50;
 
-var twentyNotes = fiftyNotes / 20;
+var twentyNotes = fiftyNotesRest / 20;
 var twentyNotesRest = fiftyNotesRest % 20;
 
-var tenthNotes = twentyNotes / 10;
+var tenthNotes = twentyNotesRest / 10;
 var tenthNotesRest = twentyNotesRest % 10;
 
-var fifthNotes = tenthNotes / 5;
+var fifthNotes = tenthNotesRest / 5;
 var fifthNotesRest = tenthNotesRest % 5;
 
 var twoNotes = fifthNotesRest / 2;
 var twoNotesRest = fifthNotesRest % 2;
 // Coins
-var hundredCoin = twoNotesRest / 1;
-var hundredCoinRest = twoNotesRest % 1;
+var hundredCoin = twoNotesRest;
+//var hundredCoinRest = twoNotesRest % 1;
 
-var fiftyCoin = hundredCoinRest % .50;
-var fiftyCoinRest = hundredCoinRest % .50;
+var fiftyCoin = doublePortion / 50;
+var fiftyCoinRest = doublePortion % 50;
 
-var twentyFiveCoin = fiftyCoinRest % .25;
-var twentyFiveCoinRest = fiftyCoinRest % .25;
+var twentyFiveCoin = fiftyCoinRest / 0.25;
+var twentyFiveCoinRest = fiftyCoinRest % 0.25;
 
-var tenthCoin = twentyFiveCoinRest % .10;
-var tenthCoinRest = twentyFiveCoinRest % .10;
+var tenthCoin = twentyFiveCoinRest / 0.10;
+var tenthCoinRest = twentyFiveCoinRest % 0.10;
 
-var fifthCoin = tenthCoinRest % .05;
-var fifthCoinRest = tenthCoinRest % .05;
+var fifthCoin = tenthCoinRest / 0.05;
+var fifthCoinRest = tenthCoinRest % 0.05;
 
-var oneCoin = fifthCoinRest % .01;
+var oneCoin = fifthCoinRest;
 
 
 Console.WriteLine(amount);

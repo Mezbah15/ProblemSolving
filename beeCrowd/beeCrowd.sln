@@ -37,13 +37,21 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "1017-fuelSpent", "1017-fuel
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "1018-bankNotes", "1018-bankNotes\1018-bankNotes.csproj", "{E1324D6D-4028-470E-970A-27DB9C876E81}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1019-timeConversion", "1019-timeConversion\1019-timeConversion.csproj", "{BDA15C85-BADF-4AAB-B516-0B0E20DA05B9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "1019-timeConversion", "1019-timeConversion\1019-timeConversion.csproj", "{BDA15C85-BADF-4AAB-B516-0B0E20DA05B9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1020-ageIndays", "1020-ageIndays\1020-ageIndays.csproj", "{7D45E585-8689-4102-9099-117063D4CFDD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "1020-ageIndays", "1020-ageIndays\1020-ageIndays.csproj", "{7D45E585-8689-4102-9099-117063D4CFDD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1021-bankNotesAndCoins", "1021-bankNotesAndCoins\1021-bankNotesAndCoins.csproj", "{85054B63-F561-4043-86ED-C3CEE1CEA9CC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "1021-bankNotesAndCoins", "1021-bankNotesAndCoins\1021-bankNotesAndCoins.csproj", "{85054B63-F561-4043-86ED-C3CEE1CEA9CC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1035-selectionTest-1", "1035-selectionTest-1\1035-selectionTest-1.csproj", "{7A0909F0-EBA5-48D6-9854-34EA27E02BE9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "1035-selectionTest-1", "1035-selectionTest-1\1035-selectionTest-1.csproj", "{7A0909F0-EBA5-48D6-9854-34EA27E02BE9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1038-snack", "1038-snack\1038-snack.csproj", "{A97FAF2A-9774-46AE-AFFE-6069DCBA131A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1040-average3", "1040-average3\1040-average3.csproj", "{C68EAE42-35A3-489F-906C-EB2594AA38E7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1036-bhaskarasFormula", "1036-bhaskarasFormula\1036-bhaskarasFormula.csproj", "{04905141-7F18-4AC1-A395-8AA71214826C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1037-interval", "1037-interval\1037-interval.csproj", "{33B9DCB8-C242-4426-9852-D481F0967FF2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -135,6 +143,22 @@ Global
 		{7A0909F0-EBA5-48D6-9854-34EA27E02BE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7A0909F0-EBA5-48D6-9854-34EA27E02BE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7A0909F0-EBA5-48D6-9854-34EA27E02BE9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A97FAF2A-9774-46AE-AFFE-6069DCBA131A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A97FAF2A-9774-46AE-AFFE-6069DCBA131A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A97FAF2A-9774-46AE-AFFE-6069DCBA131A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A97FAF2A-9774-46AE-AFFE-6069DCBA131A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C68EAE42-35A3-489F-906C-EB2594AA38E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C68EAE42-35A3-489F-906C-EB2594AA38E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C68EAE42-35A3-489F-906C-EB2594AA38E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C68EAE42-35A3-489F-906C-EB2594AA38E7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{04905141-7F18-4AC1-A395-8AA71214826C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{04905141-7F18-4AC1-A395-8AA71214826C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{04905141-7F18-4AC1-A395-8AA71214826C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{04905141-7F18-4AC1-A395-8AA71214826C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{33B9DCB8-C242-4426-9852-D481F0967FF2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{33B9DCB8-C242-4426-9852-D481F0967FF2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{33B9DCB8-C242-4426-9852-D481F0967FF2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{33B9DCB8-C242-4426-9852-D481F0967FF2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
