@@ -26,7 +26,5 @@ class URI
 
         Console.WriteLine("A=" + (Math.Round(A, 4)));
 
-
     }
-
 }

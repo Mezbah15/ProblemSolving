@@ -14,13 +14,14 @@ Input Samples	Output Samples
 R1 = -0.29788
 R2 = -1.71212 */
 
-var A = Convert.ToDouble(Console.ReadLine());
-var B = Convert.ToDouble(Console.ReadLine());
-var C = Convert.ToDouble(Console.ReadLine());
+var input = Console.ReadLine().Split();
+var A = double.Parse(input[0]);
+var B = double.Parse(input[1]);
+var C = double.Parse(input[2]);
 
 var discriminant = B * B - 4 * A * C;
-if (discriminant < 0)
-{
+if (discriminant < 0 || A == 0) // Remember the condition
+{ 
     Console.WriteLine("Impossivel calcular");
 }
 else

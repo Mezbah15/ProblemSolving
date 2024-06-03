@@ -14,9 +14,10 @@ Output
 The output file must contain 5 lines of data. Each line corresponds to one of the areas described above, always with a corresponding message (in Portuguese) and one space between the two points and the value. The value calculated must be presented with 3 digits after the decimal point.
 */
 
-double A = Convert.ToDouble(Console.ReadLine());
-double B = Convert.ToDouble(Console.ReadLine());
-double C = Convert.ToDouble(Console.ReadLine());
+var input = Console.ReadLine().Split(); // Split(); it takes whiteSpace only.
+double A = double.Parse(input[0]);
+double B = double.Parse(input[1]);
+double C = double.Parse(input[2]);
 
 //a) Area of Triangle
 

@@ -22,35 +22,38 @@ Aluno aprovado.
 Media final: 5.9
 */
 
-double N1 = Convert.ToDouble(Console.ReadLine());
-double N2 = Convert.ToDouble(Console.ReadLine());
-double N3 = Convert.ToDouble(Console.ReadLine());
-double N4 = Convert.ToDouble(Console.ReadLine());
+var input = Console.ReadLine().Split(); // Split(); it takes whiteSpace only.
+double N1 = double.Parse(input[0]);
+double N2 = double.Parse(input[1]);
+double N3 = double.Parse(input[2]);
+double N4 = double.Parse(input[3]);
 
-double average = (N1 * 2 + N2 * 3 + N3 * 4 + N4 * 1) / (2 + 3 + 4 + 1);
-Console.WriteLine("Media : " + average);
+double average1 = (N1 * 2 + N2 * 3 + N3 * 4 + N4 * 1) / (2 + 3 + 4 + 1);
+double average = Math.Round(average1, 1);
+//var ave = average.ToString("0.0");
+Console.WriteLine("Media: " + average.ToString("0.0"));
 if(average >= 7)
 {
     Console.WriteLine("Aluno aprovado.");
 }
-if(average < 5)
+else if(average < 5)
 {
     Console.WriteLine("Aluno reprovado.");
 }
-if (average >= 5 && average <= 6.9)
+else if (average >= 5 && average <= 6.9)
 {
     Console.WriteLine("Aluno em exame.");
     double N5 = Convert.ToDouble(Console.ReadLine());
-    Console.WriteLine("Nota do exame: " + N5);
+    Console.WriteLine("Nota do exame: " + N5.ToString("0.0"));
 
     double reAverage = (N5 + average) / 2;
     if(reAverage >= 5)
     {
         Console.WriteLine("Aluno aprovado.");
     }
-    if(reAverage <= 4.9)
+    else if(reAverage <= 4.9)
     {
         Console.WriteLine("Aluno reprovado.");
     }
-    Console.WriteLine("Media final: " + reAverage);
+    Console.WriteLine("Media final: " + reAverage.ToString("0.0"));
 }

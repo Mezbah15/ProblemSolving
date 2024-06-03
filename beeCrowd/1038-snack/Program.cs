@@ -15,38 +15,43 @@ Input Sample	Output Sample
 Total: R$ 10.00
 */
 
-short X = Convert.ToInt16(Console.ReadLine());
-short Y = Convert.ToInt16(Console.ReadLine());
+var input = Console.ReadLine().Split();
+var X = int.Parse(input[0]);
+var Y = int.Parse(input[1]);
 
 
 if (X == 1)
 {
     var value1 = (Y * 4);
-    var valuestr1 = value1.ToString("0.00");
-    Console.WriteLine(valuestr1);
+    //var valuestr1 = value1.ToString("0.00");
+    Console.WriteLine("Total: R$ " +value1.ToString("0.00");
 }
-if (X == 2)
+else if (X == 2)
 {
     var value2 = Y * 4.5;
-    var valuestr2 = value2.ToString("0.00");
-    Console.WriteLine(valuestr2);
+   // var valuestr2 = value2.ToString("0.00");
+    Console.WriteLine("Total: R$ "+value2.ToString("0.00"));
 }
-if (X == 3)
+else if (X == 3)
 {
     var value3 = Y * 5;
     var valuestr3 = value3.ToString("0.00");
-    Console.WriteLine(valuestr3);
+    Console.WriteLine("Total: R$ "+valuestr3);
 }
-if (X == 4)
+else if (X == 4)
 {
     var value4 = Y * 2;
     var valuestr4 = value4.ToString("0.00");
-    Console.WriteLine(valuestr4);
+    Console.WriteLine("Total: R$ "+valuestr4);
 }
-if (X == 5)
+else if (X == 5)
 {
     var value5 = Y * 1.5;
     var valuestr5 = value5.ToString("0.00");
-    Console.WriteLine(valuestr5);
+    Console.WriteLine("Total: R$ "+valuestr5);
+}
+else
+{
+    Console.WriteLine("Enter right input");
 }
 
